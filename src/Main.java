@@ -21,8 +21,6 @@ public class Main {
             if (i > maxSalary) {
                 maxSalary = i;
             }
-        }
-        for (int i : costsInWeeks) {
             if (i < minSalary) {
                 minSalary = i;
             }
@@ -34,5 +32,15 @@ public class Main {
         }
 //Task3
         System.out.println("\nTask 3");
+        int[] costsPerMonthByWeek = {10_000, 5_000, 15_000, 20_000};
+
+        int sunSalariesTwo = 0;
+        for (int salary : costsPerMonthByWeek) {
+            sunSalariesTwo += salary;
+        }
+        {
+            double averageSalaryPerMonth = (double) sunSalariesTwo / costsPerMonthByWeek.length;
+            System.out.printf("Средняя сумма трат за месяц составила %s рублей", averageSalaryPerMonth);
+        }
     }
 }
