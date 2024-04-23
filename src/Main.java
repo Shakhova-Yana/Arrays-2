@@ -40,7 +40,13 @@ public class Main {
         }
         {
             double averageSalaryPerMonth = (double) sunSalariesTwo / costsPerMonthByWeek.length;
-            System.out.printf("Средняя сумма трат за месяц составила %s рублей", averageSalaryPerMonth);
+            System.out.printf("Средняя сумма трат за месяц составила %s рублей%n", averageSalaryPerMonth);
+        }
+//Task4
+        System.out.println("\nTask 4");
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
         }
     }
 }
